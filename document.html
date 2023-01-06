@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="=UTF-8">
+        <meta name="viewport" content="width=device-width" intial scale="0.1">
+        <title>MODERN NAV BAR</title>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <nav>
+            <div class="logo"><h1>karthik-developer</h1></div>
+            <ul id="click">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+            <li ><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">product</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+            <img src="./img.png.jpg" onclick="showMenu()">
+        </nav>
+        <script>
+            let click= document.getElementById("click");
+            function showMenu(){
+                click.style.right="0";
+                        }
+                        function hideMenu(){
+                            click.style.rigth="-500px";
+                        }
+
+        </script>
+
+    </body>
+</html>
